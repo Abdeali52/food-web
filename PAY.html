@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="food.css">
+    <title>PAYMENT</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <form action="">
+        <h1 class="center">payment Form</h1>
+        <h4 class="center">required fields are followed by *</h4>
+        <h2 class="center">contact informatiom</h2>
+        <p class="center"> Name:* <input type="text" name="name" id="name" required></p>
+        <fieldset>
+            <legend>Gender*</legend>
+        <P class="center">     
+            Male: <input type="radio"name="gender" id="male"required>
+            female: <input type="radio" name="gender" id="female"required>
+        </P>
+    </fieldset>
+    <p class="center">Address:* <textarea name="address" id="adress" cols="20" rows="7"></textarea> </p>
+    <p class="center">Email:* <input type="email" name="email" id="email"required></p>
+    <p class="center">Pincode:* <input type="number" name="pincode" id="pincode"required></p>
+    <h2 class="center">Payment information</h2>
+    <p class="center">cardtype:*
+        <select name="card_type" id="card_type"required>
+            <option value="">--select type--</option>
+            <option value="visa">visa</option>
+            <option value="rupay">rupay</option>
+            <option value="master card">master card</option>
+        </select>
+    </p>
+    <p class="center">
+        Card number:* <input type="number" name="card_number" id="card_number"required>
+    </p>
+    <p class="center">
+        Expiration Date:* <input type="date" name="_exp_date" id="exp_date"required>
+    </p>
+    <p class="center">
+        CVV:*<input type="password" name="CVV" id="CVV"required>
+    </p>
+    <p class="center">
+        Amount:*<input type="number" name="amount" id="amount" required>
+    </p>
+    <input onclick="popup()" class="cente" type="submit" value="Pay now">
+    <script>
+        function popup(){
+            swal("successfull!","payment done!","success")
+        }
+        </script>
+    <input class="center" type="reset" value="Reset">
+    <sectionid="back">
+        <a class="me" href="fast.html">BACK</a>
+        <a class="me" href="index.html">main page</a>
+    </section>
+    </form>
+</body>
+</html>
